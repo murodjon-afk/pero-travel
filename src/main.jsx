@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
 import Tours from './pages/Tours';         // Импортируем страницу Экскурсий
 import './index.css';
+import Cabinet from './pages/Cabinet';         // Импортируем страницу Экскурсий
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,11 @@ const router = createBrowserRouter([
     path: "/tours",       // Этот путь должен совпадать с <Link to="/tours">
     element: <Tours />,
   },
+    {
+    path: "/cabinet",       // Этот путь должен совпадать с <Link to="/tours">
+    element: <Cabinet />,
+  },
+ 
  
  
 ]);

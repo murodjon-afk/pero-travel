@@ -1,11 +1,11 @@
-import bgImg from '../public/bg.png'
+import bgImg from './assets/public/bg.png'
 import './App.css'
-import logo from '../public/logo.png'
+import logo from './assets/public/logo.png'
 import tourBg from './assets/tourBg.jpg'
 import tourBg2 from './assets/tourBg2.jpg'
 import tourBg3 from './assets/tourBg3.jpg'
-import bgImg2 from '../public/bg2.jpg'
-import bgImg3 from '../public/bg3.png'
+import bgImg2 from './assets/public/bg2.jpg'
+import bgImg3 from './assets/public/bg3.png'
 import { Link } from 'react-router-dom';
 import { useEffect, useRef } from "react";
 function App() {
@@ -104,7 +104,7 @@ const itemStyle ="relative overflow-hidden rounded-2xl shadow-lg group"
      <Link to="/tours" className="text-white text-[15px] lg:text-[17px] font-medium hover:text-[#FFC700] duration-300">
        Экскурсии
      </Link>
-     <Link to="/profile" className="text-white text-[15px] lg:text-[17px] font-medium hover:text-[#FFC700] duration-300">
+     <Link  className="text-white text-[15px] lg:text-[17px] font-medium hover:text-[#FFC700] duration-300">
        Личный кабинет
      </Link>
    </nav>
@@ -154,9 +154,9 @@ const itemStyle ="relative overflow-hidden rounded-2xl shadow-lg group"
                 Экскурсия начнется с подъёма на гору Большой Ахун...
               </p>
 
-              <button className="text-white w-[160px] h-[40px] bg-[#0499DD] rounded-full text-[15px] cursor-pointer">
+              <Link to="/cabinet" className="flex items-center justify-center text-white w-[160px] h-[40px] bg-[#0499DD] rounded-full text-[15px] cursor-pointer">
                 Подробнее
-              </button>
+              </Link>
             </div>
           ))}
         </div>
@@ -325,7 +325,7 @@ const itemStyle ="relative overflow-hidden rounded-2xl shadow-lg group"
 </div>
     </section>
 
-    <section className='w-[100%] h-[50vh] flex justify-end px-[10%]'         style={{ backgroundImage: `url(${bgImg3})` }}>
+    <section className='w-[100%] h-[65vh] flex justify-end px-[10%]'         style={{ backgroundImage: `url(${bgImg3})` }}>
 <div className="h-full w-[400px] bg-white/10 backdrop-blur-xl flex flex-col items-center justify-between p-8  border border-white/10">
   
   {/* Заголовок */}
@@ -371,7 +371,7 @@ const itemStyle ="relative overflow-hidden rounded-2xl shadow-lg group"
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-8">
         
         {/* 1. Логотип (Воздушный шар) */}
-        <div className="flex-shrink-0">
+        <div className="shrink-0">
           <img 
             src="/logo.png" 
             alt="PeroTravel" 
