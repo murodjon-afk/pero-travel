@@ -53,7 +53,7 @@ const reviews = [
 
 const itemStyle = "relative overflow-hidden rounded-2xl shadow-lg group";
 
-export default function Tours() {
+export default function Cabinet() {
   const scrollRef2 = useRef(null);
   const loopTours2 = [...reviews, ...reviews, ...reviews];
 

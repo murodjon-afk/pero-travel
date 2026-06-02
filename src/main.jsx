@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
-import Tours from './pages/Tours';         // Импортируем страницу Экскурсий
+import Tours from './pages/tours';         // Импортируем страницу Экскурсий
 import './index.css';
-import Cabinet from './pages/Cabinet';         // Импортируем страницу Экскурсий
+import Cabinet from './pages/cabinet';         // Импортируем страницу Экскурсий
 
 const router = createBrowserRouter([
   {
